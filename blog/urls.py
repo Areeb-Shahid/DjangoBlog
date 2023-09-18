@@ -8,7 +8,6 @@ from .views import (
 )
 from . import views
 
-
 urlpatterns = [
     path('', PostListView.as_view(), name='blog-home'),
     path('post/<int:pk>/', PostDetailView.as_view(), name='post-detail'),
